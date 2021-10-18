@@ -10,3 +10,15 @@ C:\Users\adria\OneDrive\Documentos\DevRepos\C#\Projeto DinDin\Utils\obj\Debug\ne
 C:\Users\adria\OneDrive\Documentos\DevRepos\C#\Projeto DinDin\Utils\obj\Debug\net5.0\Utils.dll
 C:\Users\adria\OneDrive\Documentos\DevRepos\C#\Projeto DinDin\Utils\obj\Debug\net5.0\ref\Utils.dll
 C:\Users\adria\OneDrive\Documentos\DevRepos\C#\Projeto DinDin\Utils\obj\Debug\net5.0\Utils.pdb
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\bin\Debug\net5.0\Utils.deps.json
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\bin\Debug\net5.0\Utils.dll
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\bin\Debug\net5.0\ref\Utils.dll
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\bin\Debug\net5.0\Utils.pdb
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\obj\Debug\net5.0\Utils.csproj.AssemblyReference.cache
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\obj\Debug\net5.0\Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\obj\Debug\net5.0\Utils.AssemblyInfoInputs.cache
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\obj\Debug\net5.0\Utils.AssemblyInfo.cs
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\obj\Debug\net5.0\Utils.csproj.CoreCompileInputs.cache
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\obj\Debug\net5.0\Utils.dll
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\obj\Debug\net5.0\ref\Utils.dll
+C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Utils\obj\Debug\net5.0\Utils.pdb

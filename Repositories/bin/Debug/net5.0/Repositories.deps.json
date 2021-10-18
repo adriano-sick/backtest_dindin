@@ -141,10 +141,19 @@
       },
       "Entities/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.11"
+          "Microsoft.EntityFrameworkCore": "5.0.11",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "Entities.dll": {}
+        }
+      },
+      "Utils/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.11"
+        },
+        "runtime": {
+          "Utils.dll": {}
         }
       }
     }
@@ -254,6 +263,11 @@
       "hashPath": "system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
     },
     "Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

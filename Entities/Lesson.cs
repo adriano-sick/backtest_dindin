@@ -8,6 +8,7 @@ namespace Cafeine_DinDin_Backend.Entities
     public class Lesson
     {
         public int ID { get; set; }
+        public string Title { get; set; }
         public int order { get; set; }
         public string Link { get; set; }
         public string  UrlImage { get; set; }

@@ -143,7 +143,8 @@
       },
       "Entities/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.11"
+          "Microsoft.EntityFrameworkCore": "5.0.11",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "Entities.dll": {}
