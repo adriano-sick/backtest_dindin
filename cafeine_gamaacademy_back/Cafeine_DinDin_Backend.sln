@@ -5,15 +5,20 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cafeine_DinDin_Backend", "Cafeine_DinDin_Backend.csproj", "{CBC58015-06E0-4B8A-BBE6-180B0C33E02C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafeine_DinDin_Backend_Tests", "..\Cafeine_DinDin_Backend_Tests\Cafeine_DinDin_Backend_Tests.csproj", "{38C71EEB-120C-4469-BBD2-0EBA45AE65AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cafeine_DinDin_Backend_Tests", "..\Cafeine_DinDin_Backend_Tests\Cafeine_DinDin_Backend_Tests.csproj", "{38C71EEB-120C-4469-BBD2-0EBA45AE65AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "..\Entities\Entities.csproj", "{49642BA4-4620-41AA-ACD3-73B003D5D55D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "..\Entities\Entities.csproj", "{49642BA4-4620-41AA-ACD3-73B003D5D55D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "..\Repositories\Repositories.csproj", "{1563144A-4C12-4975-81D0-1D00987567C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "..\Repositories\Repositories.csproj", "{1563144A-4C12-4975-81D0-1D00987567C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "..\Services\Services.csproj", "{AD727C61-E1DA-43E8-90D9-1F95F03CBBC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "..\Services\Services.csproj", "{AD727C61-E1DA-43E8-90D9-1F95F03CBBC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "..\Utils\Utils.csproj", "{6760F099-3B71-4048-9201-5271914C129A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "..\Utils\Utils.csproj", "{6760F099-3B71-4048-9201-5271914C129A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C2698741-0C90-4EA9-9111-F1120F4CA164}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

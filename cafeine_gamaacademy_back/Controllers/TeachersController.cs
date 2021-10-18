@@ -2,9 +2,7 @@
 using Cafeine_DinDin_Backend.Repositories;
 using Cafeine_DinDin_Backend.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Cafeine_DinDin_Backend.Controllers
@@ -13,7 +11,7 @@ namespace Cafeine_DinDin_Backend.Controllers
     [Route("[controller]")]
     public class TeachersController : ControllerBase
     {
-        private TeacherService _teacherService;
+        private readonly TeacherService _teacherService;
         public TeachersController(ApplicationDBContext context)
         {
             _teacherService = new(context);

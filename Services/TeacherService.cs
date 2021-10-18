@@ -1,15 +1,13 @@
 ﻿using Cafeine_DinDin_Backend.Entities;
 using Cafeine_DinDin_Backend.Repositories;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Cafeine_DinDin_Backend.Services
 {
     public class TeacherService
     {
-        private TeacherRepository _repo;
+        private readonly TeacherRepository _repo;
         public TeacherService(ApplicationDBContext context)
         {
             _repo = new(context);

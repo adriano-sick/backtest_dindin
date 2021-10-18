@@ -16,19 +16,18 @@ namespace Cafeine_DinDin_Backend.Repositories
         public List<Teacher> FindAll()
         {
             //uso do Include para carga ansiosa / Eager load
-            return _context.teachers.ToList();
+            return _context.Teachers.ToList();
         }
 
         public Teacher Find(int id)
         {
-            return _context.teachers.FirstOrDefault(t => t.Id == id);
+            return _context.Teachers.FirstOrDefault(t => t.Id == id);
         }
 
-        public Teacher save(Teacher teacher)
-        {
-
-            return teacher;
-        }
+        //public Teacher Save(Teacher teacher)
+        //{
+        //    return teacher;
+        //}
         public async Task<Teacher> SaveTeacher(Teacher teacher)
         {
             try
@@ -39,7 +38,7 @@ namespace Cafeine_DinDin_Backend.Repositories
                 return result.Entity;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
@@ -54,7 +53,7 @@ namespace Cafeine_DinDin_Backend.Repositories
                 return result.Entity;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
@@ -68,7 +67,7 @@ namespace Cafeine_DinDin_Backend.Repositories
                 _context.SaveChanges();
                 return (result.Entity.Id == teacher.Id);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return false;
             }

@@ -1,15 +1,13 @@
 ﻿using Cafeine_DinDin_Backend.Entities;
 using Cafeine_DinDin_Backend.Repositories;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Cafeine_DinDin_Backend.Services
 {
     public class CourseService 
     {
-        private CourseRepository _repo;
+        private readonly CourseRepository _repo;
         public CourseService(ApplicationDBContext context)
         {
             _repo = new(context);
@@ -70,7 +68,7 @@ namespace Cafeine_DinDin_Backend.Services
                 {
                     _repo.DeleteLesson(course, idLesson);
 
-                    if (_repo.save(course) != null)
+                    if (_repo.Save(course) != null)
                     {
                         ret = 204; // no-Content
                     }

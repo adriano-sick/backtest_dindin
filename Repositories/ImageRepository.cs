@@ -16,20 +16,19 @@ namespace Cafeine_DinDin_Backend.Repositories
         public List<Image> FindAll()
         {
             //uso do Include para carga ansiosa / Eager load
-            return _context.images.ToList();
+            return _context.Images.ToList();
         }
 
         public Image Find(int id)
         {
-            var teer = _context.images.Find(id);
+            var teer = _context.Images.Find(id);
             return teer;
         }
 
-        public Image save(Image image)
-        {
-
-            return image;
-        }
+        //public static Image Save(Image image)
+        //{
+        //    return image;
+        //}
         public async Task<Image> SaveImage(Image image)
         {
             try
@@ -40,7 +39,7 @@ namespace Cafeine_DinDin_Backend.Repositories
                 return result.Entity;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
@@ -55,7 +54,7 @@ namespace Cafeine_DinDin_Backend.Repositories
                 return result.Entity;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
@@ -69,7 +68,7 @@ namespace Cafeine_DinDin_Backend.Repositories
                 _context.SaveChanges();
                 return (result.Entity.ID == image.ID);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return false;
             }

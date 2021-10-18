@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Cafeine_DinDin_Backend.Controllers
 {
@@ -16,7 +12,7 @@ namespace Cafeine_DinDin_Backend.Controllers
         }
 
         // GET: TeacherController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details()
         {
             return View();
         }
@@ -43,7 +39,7 @@ namespace Cafeine_DinDin_Backend.Controllers
         }
 
         // GET: TeacherController/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit()
         {
             return View();
         }

@@ -1,16 +1,14 @@
 ﻿using Cafeine_DinDin_Backend.Entities;
 using Cafeine_DinDin_Backend.Repositories;
 using Cafeine_DinDin_Backend.Utils;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Cafeine_DinDin_Backend.Services
 {
     public class ImageService
     {
-        private ImageRepository _repo;
+        private readonly ImageRepository _repo;
 
         public ImageService(ApplicationDBContext context)
         {
@@ -29,12 +27,12 @@ namespace Cafeine_DinDin_Backend.Services
 
         public async Task<Image> PostImage(Image image)
         {
-            image.image = Conversor.DecodeFrom64ToBytes(image.image64);
+            image.ImageByte = Conversor.DecodeFrom64ToBytes(image.Image64);
             return await _repo.SaveImage(image);
         }
         public Image UpdateImage(Image image)
         {
-            image.image = Conversor.DecodeFrom64ToBytes(image.image64);
+            image.ImageByte = Conversor.DecodeFrom64ToBytes(image.Image64);
             return _repo.UpdateImage(image);
         }
         public int DeleteImage(int id, string confirm)

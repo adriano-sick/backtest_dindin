@@ -3,9 +3,6 @@ using Cafeine_DinDin_Backend.Repositories;
 using Cafeine_DinDin_Backend.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Net.Http.Headers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Cafeine_DinDin_Backend.Controllers
@@ -14,11 +11,10 @@ namespace Cafeine_DinDin_Backend.Controllers
     [Route("[controller]")]
     public class ImagesController : ControllerBase
     {
-        private ImageService _imageService;
+        private readonly ImageService _imageService;
         public ImagesController(ApplicationDBContext context)
         {
             _imageService = new(context);
-
         }
         
         [HttpGet("{id}")]
@@ -28,7 +24,7 @@ namespace Cafeine_DinDin_Backend.Controllers
             //tratamento para caso não encontre
             if (image != null)
             {
-                var stream = new System.IO.MemoryStream(image.image);
+                var stream = new System.IO.MemoryStream(image.ImageByte);
                 return new FileStreamResult(stream, new MediaTypeHeaderValue("image/jpeg"))
                 {
                     FileDownloadName = $"{image.ID}.jpg"

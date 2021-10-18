@@ -1,16 +1,12 @@
 ﻿using Cafeine_DinDin_Backend.Utils;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Cafeine_DinDin_Backend.Entities
 {
     public class User
-
     {
-        public String name { get; set; }
+        public String Name { get; set; }
         public String Login { get; set; }
         public Char Level { get; set; }
         [NotMapped] 
@@ -20,7 +16,7 @@ namespace Cafeine_DinDin_Backend.Entities
 
         public User(string name, string login, char level)
         {
-            this.name = name;
+            this.Name = name;
             Login = login;
             Level = level;
            

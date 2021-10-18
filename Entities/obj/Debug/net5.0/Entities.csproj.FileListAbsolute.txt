@@ -25,3 +25,6 @@ C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Entities\bin\Debug\net5.0
 C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Entities\bin\Debug\net5.0\Utils.dll
 C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Entities\bin\Debug\net5.0\Utils.pdb
 C:\Users\Jean Paul\Source\Repos\Cafeine_DinDin_Backend\Entities\obj\Debug\net5.0\Entities.csproj.CopyComplete
+C:\Users\adria\OneDrive\Documentos\DevRepos\C#\Projeto DinDin\Entities\bin\Debug\net5.0\Utils.dll
+C:\Users\adria\OneDrive\Documentos\DevRepos\C#\Projeto DinDin\Entities\bin\Debug\net5.0\Utils.pdb
+C:\Users\adria\OneDrive\Documentos\DevRepos\C#\Projeto DinDin\Entities\obj\Debug\net5.0\Entities.csproj.CopyComplete

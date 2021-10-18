@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Cafeine_DinDin_Backend.Entities
 {
     public class Image
     {
         public int ID {get; set;}
-        public byte[] image { get; set; }
+        public byte[] ImageByte { get; set; }
 
         [NotMapped]
-        public string image64 { get; set; }
+        public string Image64 { get; set; }
     }
 }

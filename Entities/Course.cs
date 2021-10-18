@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Cafeine_DinDin_Backend.Entities
 {
     public class Course
     {
-        
-
         public int ID { get; set; }
         public string Title { get; set; }
         public string UrlCover { get; set; }

@@ -1,9 +1,5 @@
 ﻿using Cafeine_DinDin_Backend.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Cafeine_DinDin_Backend.Repositories
 {
@@ -13,10 +9,10 @@ namespace Cafeine_DinDin_Backend.Repositories
         {
 
         }
-        public DbSet<Course> courses{ get; set; }
-        public DbSet<Teacher> teachers { get; set; }
-        public DbSet<Lesson> lessons { get; set; }
-        public DbSet<Image> images{ get; set; }
+        public DbSet<Course> Courses{ get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Lesson> Lessons { get; set; }
+        public DbSet<Image> Images{ get; set; }
 
 
     }

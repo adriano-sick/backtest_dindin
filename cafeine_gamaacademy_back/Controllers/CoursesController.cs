@@ -2,10 +2,7 @@
 using Cafeine_DinDin_Backend.Repositories;
 using Cafeine_DinDin_Backend.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Cafeine_DinDin_Backend.Controllers
@@ -13,20 +10,17 @@ namespace Cafeine_DinDin_Backend.Controllers
     [ApiController]
     [Route("[controller]")]
     public class CoursesController : ControllerBase
-    {
-        
-        private CourseService _courseService;
+    {        
+        private readonly CourseService _courseService;
 
         public CoursesController(ApplicationDBContext context)
         {
-            _courseService = new(context);
-                 
+            _courseService = new(context);                 
         }
 
         [HttpGet]
         public ActionResult<List<Course>> Get()
-        {
-         
+        {         
             return _courseService.GetAllCourses();
         }
 

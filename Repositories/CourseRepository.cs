@@ -1,5 +1,4 @@
 ﻿using Cafeine_DinDin_Backend.Entities;
-
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,7 +10,6 @@ namespace Cafeine_DinDin_Backend.Repositories
     
     public class CourseRepository
     {
-
         private readonly ApplicationDBContext _context;
         public CourseRepository(ApplicationDBContext context)
         {
@@ -21,19 +19,19 @@ namespace Cafeine_DinDin_Backend.Repositories
         public List<Course> FindAll()
         {
             //uso do Include para carga ansiosa / Eager load
-            return _context.courses.Include(c => c.Teacher).Include(c => c.Lessons).ToList();
+            return _context.Courses.Include(c => c.Teacher).Include(c => c.Lessons).ToList();
         }
 
         public Course Find(int id)
         {
-            return _context.courses.Include(c => c.Teacher).Include(c => c.Lessons).FirstOrDefault(c => c.ID == id); 
+            return _context.Courses.Include(c => c.Teacher).Include(c => c.Lessons).FirstOrDefault(c => c.ID == id); 
         }
 
-        public Course save(Course course)
-        {
-            
+        public Course Save(Course course)
+        {            
             return course;
         }
+
         public async Task<Course> SaveCourse(Course course)
         {
             try
@@ -41,7 +39,7 @@ namespace Cafeine_DinDin_Backend.Repositories
 
                 if (course.Teacher.Id > 0)
                 {
-                    var teacher = await _context.teachers.SingleOrDefaultAsync(t => t.Id == course.Teacher.Id);
+                    var teacher = await _context.Teachers.SingleOrDefaultAsync(t => t.Id == course.Teacher.Id);
                     course.Teacher = teacher;
                 }
                 var result = await _context.AddAsync(course);
@@ -50,7 +48,7 @@ namespace Cafeine_DinDin_Backend.Repositories
                 return result.Entity;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
@@ -65,7 +63,7 @@ namespace Cafeine_DinDin_Backend.Repositories
                 return result.Entity;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
@@ -79,7 +77,7 @@ namespace Cafeine_DinDin_Backend.Repositories
                 _context.SaveChanges();
                 return (result.Entity.ID == course.ID);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return false;
             }
@@ -89,10 +87,10 @@ namespace Cafeine_DinDin_Backend.Repositories
         {
             try
             {
-                Lesson l = _context.lessons.Find(id);
+                Lesson l = _context.Lessons.Find(id);
                 if (l != null)
                 {
-                    var result = _context.lessons.Remove(l);
+                    var result = _context.Lessons.Remove(l);
                     _context.SaveChanges();
                     course.DeleteLesson(id);
                     return true;
@@ -101,7 +99,7 @@ namespace Cafeine_DinDin_Backend.Repositories
                     return false;
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return false;
             }
