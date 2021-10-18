@@ -47,5 +47,23 @@ namespace Cafeine_DinDin_Backend_Tests
             var byteCode = Conversor.DecodeFrom64ToBytes(text);
             return byteCode.ToString() == "System.Byte[]";
         }
+
+        [Test]
+        [TestCase (10, ExpectedResult = true)]
+        public bool MustCreateRandoString(int length)
+        {
+            string str = Conversor.RandomString(length);
+            return length == str.Length;
+        }
+
+        [Test]
+        [TestCase ("Test String", ExpectedResult = true)]
+        [TestCase ("Wrong String", ExpectedResult = false)]
+        public bool MustReturnMd5Hash(string text)
+        {
+            string hash = Conversor.CreateMD5(text);
+            Console.WriteLine(hash);
+            return hash == "BD08BA3C982EAAD768602536FB8E1184";
+        }
     }
 }
