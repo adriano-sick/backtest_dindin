@@ -1,20 +1,57 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+<h1>C# .net EF6 REST DinDin API</h1>
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+This is a REST .net API system to manage a MS SQL Server database.</br>
+Developed as final project of Anima/Gama trainning</br>
+The complete project consists in a SQL Server, controlled by this C# .net API,</br>
+and consumed by a vue frontend webapp.</br>
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Postman documentation: https://documenter.getpostman.com/view/9590967/UV5WCxDu </br>
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+</br>In this API project we did:
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+* MS SQL Server based database
+* Code First: EF migration used to create database
+* Data model creation to DB entity mapping
+* REST Architeture standarts used on each operation implemented.
+* Unity tests to validate utilities functionalities
+* Cloud database implementation.
+* Cloud system implemetation.
+
+Requirements and packages:
+
+* .net 5.0.
+* NuGet Package Manager.
+* Microsoft.EntityFrameworkCore.Design 5.0.10.
+* Microsoft.EntityFrameworkCore.inMemory 5.0.10.
+* Microsoft.EntityFrameworkCore.SqlServer 5.0.10.
+* Microsoft.EntityFrameworkCore.Tools 5.0.10.
+* Microsoft.VisualStudio.Web.CodeGenerator.Design 5.0.2
+
+***
+<br>
+
+* Endpoints: 
+  * Images table:
+	* GetById: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Images/{id}
+	* Post: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Images
+	* Put: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Images
+	* Delete: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Images/{id}?confirm=Yes
+  
+  * Teacher table:
+	* Get: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Teachers/
+	* GetById: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Teachers/{id}
+	* Post: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Teachers
+	* Put: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Teachers
+	* Delete: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Teachers/{id}?confirm=Yes
+
+  *Courses table:
+	* Get: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Courses/
+	* GetById: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Courses/{id}
+	* Post: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Courses
+	* Put: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Courses
+	* Delete Course: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Courses/{id}?confirm=Yes
+	* Delete Lesson: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Courses/{idCourse}/Lessons/{idLesson}?confirm=Yes
+
+<br><br>
+*Developed by: Adriano Siqueira, Aline Rosa, Breno Xavier, Fabricio dos Santos, Jean Paul, Vitor Bandeira<br>
+*10/21/21
