@@ -53,5 +53,5 @@ Requirements and packages:
 	* Delete Lesson: http://ec2-18-231-171-55.sa-east-1.compute.amazonaws.com:5000/Courses/{idCourse}/Lessons/{idLesson}?confirm=Yes
 
 <br><br>
-*Developed by: Adriano Siqueira, Aline Rosa, Arthur Camurca, Breno Xavier, Fabricio dos Santos, Jean Paul, Vitor Bandeira<br>
+*Developed by: Adriano Siqueira, Aline Rosa, Breno Xavier, Fabricio dos Santos, Jean Paul, Vitor Bandeira<br>
 *10/21/21
